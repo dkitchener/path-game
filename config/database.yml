@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: dk_blog
+  username: kitcheds
+  password: DinaKay1
+  host: localhost

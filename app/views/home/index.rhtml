@@ -1,0 +1,37 @@
+</br>
+</br>
+<% unless @submitted %>
+<div id="stylized" class="myform">
+<form id="form" name="form" method="post" action="">
+<h1 align="center" >The Broken Dreams Hub</h1>
+<p> The Broken Dreams Hub is the future home of a new San Francisco music blog. Dedicated to purveying all music news and events in San Francisco. If you would like to learn more about our mission or become a contributor, please drop us a line.</p>
+
+<label>Name
+<span class="small">Add your name</span>
+</label>
+<input type="text" name="name" id="name" />
+
+<label>Email
+<span class="small">Add a valid address</span>
+</label>
+<input type="text" name="email" id="email" />
+
+<label>Comments
+<span class="small">Drop us a line:</span>
+</label>
+<%= text_area('mails', 'comments', :rows => '10') %>
+
+<button type="submit">Submit</button>
+<div class="spacer"></div>
+
+</form>
+</div>
+<% else %>
+<div id="stylized" class="myform">
+<h1 align="center" >Thank You! We'll Keep In Touch!</h1>
+<div class="spacer"></div>
+
+</div>
+
+<% end %>
+
